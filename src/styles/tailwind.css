@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors - Green, Blue, White, Silver */
+    --color-primary: #2D5016; /* Forest green */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #F3F4F6; /* Light silver */
+    --color-secondary-foreground: #2D5016; /* Forest green */
+
+    /* Conversion Colors */
+    --color-accent: #1E40AF; /* Steel blue */
+    --color-accent-foreground: #FFFFFF; /* white */
+    --color-success: #2E7D32; /* Success green (keeping) */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #D1D5DB; /* Silver */
+    --color-warning-foreground: #1F2937; /* gray-800 */
+    --color-error: #9CA3AF; /* Silver gray */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #9CA3AF; /* Silver gray */
+    --color-destructive-foreground: #FFFFFF; /* white */
+
+    /* Background Colors */
+    --color-background: #FAFBFC; /* Technical white */
+    --color-foreground: #1A1A1A; /* Professional charcoal */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #1A1A1A; /* Professional charcoal */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #1A1A1A; /* Professional charcoal */
+
+    /* Text Colors */
+    --color-muted: #F9FAFB; /* Light silver */
+    --color-muted-foreground: #6B7280; /* Technical gray */
+
+    /* Interactive Elements */
+    --color-border: #E5E7EB; /* Light silver border */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #2D5016; /* Forest green */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-brand-headline {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+  
+  .font-value-proposition {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-cta {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-technical {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .precision-shadow {
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.08);
+  }
+
+  .precision-shadow-lg {
+    box-shadow: 0 4px 16px rgba(45, 80, 22, 0.12);
+  }
+  
+  .engineering-transition {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .technical-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .brand-spacing {
+    padding: 1.25rem; /* 20px */
+  }
+  
+  .brand-spacing-lg {
+    padding: 3.25rem; /* 52px */
+  }
+}
