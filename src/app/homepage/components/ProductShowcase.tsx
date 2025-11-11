@@ -24,7 +24,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Industrial Dryers',
     category: 'Drying Systems',
     description: 'Energy-efficient drying solutions with advanced heat recovery systems for optimal performance.',
-    image: "https://images.unsplash.com/photo-1698580868042-8a1bfab0c4c0",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
     alt: 'Large industrial drying equipment with stainless steel construction and control panels in manufacturing facility',
     applications: ['Food Processing', 'Chemical', 'Pharmaceutical'],
     href: '/product-detail'
@@ -34,7 +34,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Heat Exchangers',
     category: 'Thermal Systems',
     description: 'Custom-designed heat exchangers for maximum thermal efficiency and corrosion resistance.',
-    image: "https://images.unsplash.com/photo-1710322419301-60150805bc32",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
     alt: 'Industrial heat exchanger with multiple tube bundles and flanged connections in process plant',
     applications: ['Petrochemical', 'Power', 'HVAC'],
     href: '/product-detail'
@@ -44,7 +44,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Pressure Vessels',
     category: 'Storage Systems',
     description: 'ASME-certified pressure vessels engineered for high-pressure applications and safety.',
-    image: "https://images.unsplash.com/photo-1614321425365-1bef7336c730",
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
     alt: 'Large cylindrical pressure vessel with inspection ports and safety valves in industrial setting',
     applications: ['Oil & Gas', 'Chemical', 'Power Generation'],
     href: '/product-detail'
@@ -54,7 +54,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Reactors & Mixers',
     category: 'Process Equipment',
     description: 'Precision mixing solutions with variable speed control and hygienic design standards.',
-    image: "https://images.unsplash.com/photo-1687150399359-fe0c011af636",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
     alt: 'Stainless steel industrial mixing tank with agitator and control system in clean processing environment',
     applications: ['Food & Dairy', 'Pharmaceutical', 'Chemicals'],
     href: '/product-detail'
@@ -64,7 +64,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Filtration Systems',
     category: 'Separation Equipment',
     description: 'Advanced filtration and separation systems for pure, contamination-free output.',
-    image: "https://images.unsplash.com/photo-1564078516393-d3d1902b1669",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
     alt: 'Industrial filtration system with multiple filter cartridges and control panel in pharmaceutical facility',
     applications: ['Water Treatment', 'Chemical', 'Pharmaceutical'],
     href: '/product-detail'
@@ -74,7 +74,7 @@ const ProductShowcase = ({ className = '' }: ProductShowcaseProps) => {
     name: 'Skid-Mounted Units',
     category: 'Complete Systems',
     description: 'Pre-engineered, modular process skids for fast installation and commissioning.',
-    image: "https://images.unsplash.com/photo-1615497001839-ae274bb1b842",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
     alt: 'Complete skid-mounted process unit with pumps, heat exchangers, and control systems',
     applications: ['Oil & Gas', 'Chemical', 'Water Treatment'],
     href: '/product-detail'

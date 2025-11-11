@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import HeroSection from './HeroSection';
 import IndustryQuickAccess from './IndustryQuickAccess';
 import ProductShowcase from './ProductShowcase';
+import ClientsMarquee from './ClientsMarquee';
 import SpecializedExpertiseBanner from './SpecializedExpertiseBanner';
 import FeaturedProjects from './FeaturedProjects';
 import CapabilityHighlights from './CapabilityHighlights';
@@ -29,6 +30,7 @@ const HomepageInteractive = ({ className = '' }: HomepageInteractiveProps) => {
         <HeroSection />
         <IndustryQuickAccess />
         <ProductShowcase />
+        <ClientsMarquee />
         <SpecializedExpertiseBanner />
         <FeaturedProjects />
         <CapabilityHighlights />
@@ -45,6 +47,7 @@ const HomepageInteractive = ({ className = '' }: HomepageInteractiveProps) => {
       <HeroSection />
       <IndustryQuickAccess />
       <ProductShowcase />
+      <ClientsMarquee />
       <SpecializedExpertiseBanner />
       <FeaturedProjects />
       <CapabilityHighlights />

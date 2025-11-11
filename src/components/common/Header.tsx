@@ -29,7 +29,7 @@ const Header = ({ className = '' }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
-  // 7 Primary Navigation Menus
+  // 7 Primary Navigation Menus - Hub-and-Spoke Architecture
   const navigationMenus: NavItem[] = [
     {
       label: 'Industries',
@@ -38,21 +38,21 @@ const Header = ({ className = '' }: HeaderProps) => {
           {
             title: 'Core Industries',
             items: [
-              { label: 'Food, Dairy & Brewery', href: '/industries/food-dairy', description: 'Process tanks, fermenters, spray dryers' },
+              { label: 'Food, Dairy & Brewery', href: '/industries/food-dairy-brewery', description: 'Process tanks, fermenters, spray dryers' },
               { label: 'Pharmaceutical & Biotech', href: '/industries/pharma-biotech', description: 'Reactors, WFI plants, vacuum dryers' },
-              { label: 'Petrochemical & Refinery', href: '/industries/petrochemical', description: 'Distillation columns, heat exchangers' },
+              { label: 'Petrochemical & Refinery', href: '/industries/petrochemical-refinery', description: 'Distillation columns, heat exchangers' },
               { label: 'Chemical & Fertilizer', href: '/industries/chemical-fertilizer', description: 'Reactors, crystallizers, paddle dryers' },
-              { label: 'Oil & Gas, Marine & Defence', href: '/industries/oil-gas-marine', description: 'Skid units, pressure vessels, calciners' },
+              { label: 'Oil & Gas, Marine & Defence', href: '/industries/oil-gas-marine-defence', description: 'Skid units, pressure vessels, calciners' },
             ],
           },
           {
             title: 'Additional Sectors',
             items: [
-              { label: 'Power, Steel & Cement', href: '/industries/power-steel', description: 'Boiler systems, rotary dryers, kilns' },
-              { label: 'Textile, Dyes & Pigments', href: '/industries/textile-paper', description: 'Dyeing reactors, band dryers' },
-              { label: 'Edible Oil, Carbon Black & Soda Ash', href: '/industries/edible-oil', description: 'Refining systems, calciners' },
-              { label: 'Water, Sewage & Desalination', href: '/industries/water-treatment', description: 'ETP/STP/RO, thermal sludge dryers' },
-              { label: 'Agriculture & Infrastructure', href: '/industries/agriculture', description: 'Irrigation systems, storage silos' },
+              { label: 'Power & Steel', href: '/industries/power-steel', description: 'Boiler systems, rotary dryers, kilns' },
+              { label: 'Textile, Dyes & Paper', href: '/industries/textile-dyes-paper', description: 'Dyeing reactors, band dryers' },
+              { label: 'Edible Oil, Carbon Black & Soda Ash', href: '/industries/edible-oil-carbon-black-soda-ash', description: 'Refining systems, calciners' },
+              { label: 'Water / ETP / STP / RO', href: '/industries/water-etp-stp-ro', description: 'ETP/STP/RO, thermal sludge dryers' },
+              { label: 'Agriculture & Infrastructure', href: '/industries/agriculture-infrastructure', description: 'Irrigation systems, storage silos' },
             ],
           },
         ],
@@ -65,16 +65,20 @@ const Header = ({ className = '' }: HeaderProps) => {
           {
             title: 'Drying Systems',
             items: [
+              { label: 'Industrial Dryers Hub', href: '/products/industrial-dryers', description: 'Complete drying solutions' },
               { label: 'Rotary Dryers', href: '/products/rotary-dryers' },
               { label: 'Paddle Dryers', href: '/products/paddle-dryers' },
               { label: 'Flash Dryers', href: '/products/flash-dryers' },
               { label: 'Spray Dryers', href: '/products/spray-dryers' },
+              { label: 'Fluidized Bed Dryers', href: '/products/fluidized-bed-dryers' },
+              { label: 'Band Dryers', href: '/products/band-dryers' },
             ],
           },
           {
             title: 'Heat Transfer',
             items: [
               { label: 'Heat Exchangers', href: '/products/heat-exchangers' },
+              { label: 'Pressure Vessels', href: '/products/pressure-vessels' },
               { label: 'Condensers', href: '/products/condensers' },
               { label: 'Evaporators', href: '/products/evaporators' },
             ],
@@ -83,10 +87,11 @@ const Header = ({ className = '' }: HeaderProps) => {
             title: 'Process Equipment',
             items: [
               { label: 'Reactors', href: '/products/reactors' },
-              { label: 'Pressure Vessels', href: '/products/pressure-vessels' },
               { label: 'Mixers & Blenders', href: '/products/mixers' },
-              { label: 'Filters & Separators', href: '/products/filters' },
+              { label: 'Filtration Units', href: '/products/filtration-units' },
+              { label: 'Agitators', href: '/products/agitators' },
               { label: 'Skid-Mounted Systems', href: '/products/skid-systems' },
+              { label: 'Calciners', href: '/products/calciners' },
             ],
           },
         ],
@@ -99,9 +104,10 @@ const Header = ({ className = '' }: HeaderProps) => {
           {
             title: 'Engineering Services',
             items: [
+              { label: 'EPC Engineering', href: '/services/epc-engineering', description: 'End-to-end turnkey solutions' },
               { label: 'Process Engineering', href: '/services/process-engineering', description: 'Design & optimization' },
-              { label: 'EPC / Turnkey Projects', href: '/services/epc-turnkey', description: 'End-to-end solutions' },
               { label: 'Cleanroom Solutions', href: '/services/cleanroom', description: 'Controlled environments' },
+              { label: 'Structural Fabrication', href: '/services/structural-fabrication', description: 'Heavy fabrication work' },
             ],
           },
           {
@@ -110,6 +116,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               { label: 'Installation & Commissioning', href: '/services/installation', description: 'Expert deployment' },
               { label: 'Maintenance & Support', href: '/services/maintenance', description: 'Ongoing care' },
               { label: 'Technical Consulting', href: '/services/consulting', description: 'Expert guidance' },
+              { label: 'Civil Projects', href: '/services/civil-projects', description: 'Infrastructure development' },
             ],
           },
         ],
@@ -160,18 +167,18 @@ const Header = ({ className = '' }: HeaderProps) => {
           {
             title: 'Company',
             items: [
-              { label: 'Vision, Mission & Values', href: '/about/vision-mission' },
-              { label: 'Infrastructure & Capabilities', href: '/about/infrastructure' },
-              { label: 'Certifications & Quality', href: '/about/certifications' },
-              { label: 'Leadership Team', href: '/about/leadership' },
+              { label: 'About Us', href: '/about', description: 'Company overview' },
+              { label: 'Vision, Mission & Values', href: '/about/vision-mission-values', description: 'Our guiding principles' },
+              { label: 'Infrastructure & Capabilities', href: '/about/infrastructure', description: 'World-class facilities' },
+              { label: 'Certifications & Quality', href: '/about/certifications', description: 'Quality assurance' },
             ],
           },
           {
-            title: 'Careers',
+            title: 'More',
             items: [
-              { label: 'Current Openings', href: '/careers/jobs' },
-              { label: 'Company Culture', href: '/careers/culture' },
-              { label: 'Internships', href: '/careers/internships' },
+              { label: 'Sustainability', href: '/sustainability', description: 'Environmental commitment' },
+              { label: 'Careers', href: '/careers', description: 'Join our team' },
+              { label: 'Case Studies', href: '/clients-case-studies', description: 'Client success stories' },
             ],
           },
         ],
@@ -326,9 +333,9 @@ const Header = ({ className = '' }: HeaderProps) => {
               className="text-foreground hover:text-primary p-2 rounded-md engineering-transition"
               aria-label="Toggle mobile menu"
             >
-              <Icon 
-                name={isMobileMenuOpen ? "XMarkIcon" : "Bars3Icon"} 
-                size={24} 
+              <Icon
+                name={isMobileMenuOpen ? "XMarkIcon" : "Bars3Icon"}
+                size={24}
               />
             </button>
           </div>

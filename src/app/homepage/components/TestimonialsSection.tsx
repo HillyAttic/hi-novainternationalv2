@@ -45,17 +45,6 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
     }
   ];
 
-  const clientLogos = [
-    "Tata Group",
-    "Reliance Industries",
-    "Lupin Pharmaceuticals",
-    "Bharat Petroleum",
-    "Hindustan Unilever",
-    "Nestlé India",
-    "Cipla",
-    "Asian Paints"
-  ];
-
   return (
     <section className={`py-16 lg:py-20 bg-muted/30 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,7 +59,7 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
@@ -97,23 +86,6 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Client Logos */}
-        <div className="text-center space-y-8">
-          <h3 className="font-cta text-xl text-foreground">Our Valued Clients</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {clientLogos.map((client, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-4 h-20 flex items-center justify-center precision-shadow hover:precision-shadow-md engineering-transition border border-border"
-              >
-                <span className="font-body text-muted-foreground font-medium text-center">
-                  {client}
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
