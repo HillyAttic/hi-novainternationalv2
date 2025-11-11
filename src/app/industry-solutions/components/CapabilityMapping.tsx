@@ -19,49 +19,49 @@ const CapabilityMapping = ({ className = '' }: CapabilityMappingProps) => {
       id: 'thermal-processing',
       name: 'Thermal Processing',
       description: 'Advanced heat transfer solutions for drying, heating, cooling, and temperature control across multiple industries.',
-      industries: ['Food & Dairy', 'Pharma & Biotech', 'Chemical Processing', 'Textiles'],
+      industries: ['Food, Dairy & Brewery', 'Pharmaceutical & Biotech', 'Chemical & Fertilizer', 'Textile, Dyes & Pigments'],
       icon: 'FireIcon',
-      applications: ['Industrial Dryers', 'Heat Exchangers', 'Evaporators', 'Cooling Systems']
+      applications: ['Spray Dryers', 'Paddle Dryers', 'Rotary Dryers', 'Heat Exchangers', 'Calciners', 'Static Ovens']
     },
     {
       id: 'pressure-systems',
       name: 'Pressure Systems',
       description: 'High-pressure vessels and systems designed for safe operation under extreme conditions with full compliance.',
-      industries: ['Petrochemical', 'Power & Energy', 'Chemical Processing', 'Mining & Minerals'],
+      industries: ['Petrochemical & Refinery', 'Oil & Gas, Marine & Defence', 'Power, Steel & Cement', 'Chemical & Fertilizer'],
       icon: 'CogIcon',
-      applications: ['Pressure Vessels', 'Reactors', 'Storage Tanks', 'Separators']
+      applications: ['Pressure Vessels', 'Reactors', 'Distillation Columns', 'Storage Tanks', 'Separators', 'Knockout Drums']
     },
     {
       id: 'fluid-handling',
       name: 'Fluid Handling',
       description: 'Complete fluid processing solutions including pumping, mixing, separation, and filtration systems.',
-      industries: ['Water Treatment', 'Food & Dairy', 'Pharma & Biotech', 'Chemical Processing'],
+      industries: ['Water, Sewage & Desalination', 'Food, Dairy & Brewery', 'Pharmaceutical & Biotech', 'Chemical & Fertilizer'],
       icon: 'BeakerIcon',
-      applications: ['Pumps & Agitators', 'Filtration Systems', 'Mixing Equipment', 'Separation Units']
+      applications: ['CIP Systems', 'Filtration & Purification', 'Mixing & Agitation', 'Centrifuges & Decanters', 'Clarifiers']
     },
     {
-      id: 'automation-control',
-      name: 'Automation & Control',
-      description: 'Intelligent control systems and automation solutions for enhanced efficiency and safety monitoring.',
-      industries: ['Automotive', 'Aerospace', 'Power & Energy', 'Mining & Minerals'],
+      id: 'specialized-dryers',
+      name: 'Specialized Dryers',
+      description: 'Comprehensive range of industrial dryers for diverse material types and processing requirements.',
+      industries: ['Edible Oil, Carbon Black & Soda Ash', 'Power, Steel & Cement', 'Textile, Dyes & Pigments', 'Water, Sewage & Desalination'],
       icon: 'CpuChipIcon',
-      applications: ['PLC Systems', 'SCADA Integration', 'Safety Controls', 'Process Monitoring']
+      applications: ['Band Dryers', 'Fluidized Bed Dryers', 'Spin Flash Dryers', 'Vacuum Dryers', 'Thermal Sludge Dryers']
     },
     {
-      id: 'material-handling',
-      name: 'Material Handling',
-      description: 'Efficient material transport and processing systems designed for various bulk and discrete materials.',
-      industries: ['Mining & Minerals', 'Automotive', 'Food & Dairy', 'Textiles'],
+      id: 'fermentation-processing',
+      name: 'Fermentation & Processing',
+      description: 'Specialized equipment for fermentation, processing, and bio-reaction applications across industries.',
+      industries: ['Food, Dairy & Brewery', 'Pharmaceutical & Biotech', 'Chemical & Fertilizer', 'Edible Oil, Carbon Black & Soda Ash'],
       icon: 'TruckIcon',
-      applications: ['Conveyors', 'Elevators', 'Feeders', 'Storage Systems']
+      applications: ['Fermenters', 'Process Tanks', 'Homogenizers', 'Crystallizers', 'Neutralizers', 'WFI Plants']
     },
     {
-      id: 'environmental-systems',
-      name: 'Environmental Systems',
-      description: 'Emission control and environmental protection systems ensuring regulatory compliance and sustainability.',
-      industries: ['Power & Energy', 'Petrochemical', 'Water Treatment', 'Chemical Processing'],
+      id: 'modular-systems',
+      name: 'Modular Systems',
+      description: 'Pre-engineered skid-mounted systems and modular process units for rapid deployment and scalability.',
+      industries: ['Oil & Gas, Marine & Defence', 'Water, Sewage & Desalination', 'Agriculture & Infrastructure', 'Pharmaceutical & Biotech'],
       icon: 'GlobeAltIcon',
-      applications: ['Scrubbers', 'Dust Collectors', 'Waste Treatment', 'Emission Monitoring']
+      applications: ['Skid-Mounted Units', 'UF/RO Systems', 'Modular Reactors', 'Pre-Fabricated Units', 'Turnkey Solutions']
     }
   ];
 

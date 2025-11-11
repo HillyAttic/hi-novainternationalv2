@@ -96,7 +96,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                 alt="Modern industrial manufacturing facility with stainless steel equipment and precision machinery in clean environment"
                 className="w-full h-96 lg:h-[500px] object-cover" />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-primary/60"></div>
               
               {/* Floating Badge */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-4 precision-shadow">

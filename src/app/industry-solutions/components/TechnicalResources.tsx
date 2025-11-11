@@ -204,7 +204,7 @@ const TechnicalResources = ({ className = '' }: TechnicalResourcesProps) => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 lg:p-12">
+          <div className="bg-primary rounded-2xl p-8 lg:p-12">
             <h3 className="font-brand-headline text-2xl lg:text-3xl text-primary-foreground mb-4">
               Need Custom Technical Documentation?
             </h3>

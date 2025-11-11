@@ -57,26 +57,35 @@ const IntelligentQuoteForm = ({ className = '' }: IntelligentQuoteFormProps) => 
   ];
 
   const industries = [
-    'Food & Dairy Processing',
-    'Pharmaceutical & Biotech',
-    'Petrochemical & Refining',
-    'Chemical Processing',
-    'Oil & Gas',
-    'Power Generation',
-    'Water Treatment',
-    'Mining & Minerals',
-    'Textile & Garments',
+    'Food, Dairy & Brewery Industry',
+    'Pharmaceutical & Biotech Industry',
+    'Petrochemical & Refinery Sector',
+    'Chemical & Fertilizer Industry',
+    'Oil & Gas, Marine & Defence',
+    'Power, Steel & Cement',
+    'Textile, Dyes & Pigments, & Paper',
+    'Edible Oil, Carbon Black & Soda Ash',
+    'Water, Sewage & Desalination (ETP/STP/RO)',
+    'Agriculture & Infrastructure Development',
     'Other Industries'
   ];
 
   const productCategories = [
-    'Industrial Dryers',
-    'Heat Exchangers',
-    'Pressure Vessels',
-    'Distillation Columns',
-    'Reactors & Mixers',
-    'Storage Tanks',
-    'Filtration Systems'
+    'Paddle Dryers',
+    'Rotary Dryers',
+    'Band Dryers',
+    'Fluidized Bed Dryers',
+    'Spin Flash Dryers',
+    'Spray Dryers',
+    'Vacuum Dryers',
+    'Calciners & Kilns',
+    'Process Tanks & Fermenters',
+    'Heat Exchangers & Condensers',
+    'Pressure Vessels & Reactors',
+    'CIP Systems & Hygienic Piping',
+    'Skid-Mounted Units',
+    'ETP/STP/RO Systems',
+    'Other Equipment'
   ];
 
   const timelines = [

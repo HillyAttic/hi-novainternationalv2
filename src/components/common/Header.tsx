@@ -38,21 +38,21 @@ const Header = ({ className = '' }: HeaderProps) => {
           {
             title: 'Core Industries',
             items: [
-              { label: 'Food & Dairy', href: '/industries/food-dairy', description: 'Processing & packaging solutions' },
-              { label: 'Pharma & Biotech', href: '/industries/pharma-biotech', description: 'GMP-compliant systems' },
-              { label: 'Petrochemical & Refinery', href: '/industries/petrochemical', description: 'High-pressure systems' },
-              { label: 'Chemical & Fertilizer', href: '/industries/chemical-fertilizer', description: 'Corrosion-resistant equipment' },
-              { label: 'Oil & Gas / Marine / Defence', href: '/industries/oil-gas-marine', description: 'Specialized engineering' },
+              { label: 'Food, Dairy & Brewery', href: '/industries/food-dairy', description: 'Process tanks, fermenters, spray dryers' },
+              { label: 'Pharmaceutical & Biotech', href: '/industries/pharma-biotech', description: 'Reactors, WFI plants, vacuum dryers' },
+              { label: 'Petrochemical & Refinery', href: '/industries/petrochemical', description: 'Distillation columns, heat exchangers' },
+              { label: 'Chemical & Fertilizer', href: '/industries/chemical-fertilizer', description: 'Reactors, crystallizers, paddle dryers' },
+              { label: 'Oil & Gas, Marine & Defence', href: '/industries/oil-gas-marine', description: 'Skid units, pressure vessels, calciners' },
             ],
           },
           {
             title: 'Additional Sectors',
             items: [
-              { label: 'Power & Steel', href: '/industries/power-steel', description: 'Heavy-duty applications' },
-              { label: 'Textile & Paper', href: '/industries/textile-paper', description: 'Process optimization' },
-              { label: 'Edible Oil & Carbon Black', href: '/industries/edible-oil', description: 'Specialized processing' },
-              { label: 'Water & ETP/STP/RO', href: '/industries/water-treatment', description: 'Environmental solutions' },
-              { label: 'Agriculture & Infrastructure', href: '/industries/agriculture', description: 'Industrial support systems' },
+              { label: 'Power, Steel & Cement', href: '/industries/power-steel', description: 'Boiler systems, rotary dryers, kilns' },
+              { label: 'Textile, Dyes & Pigments', href: '/industries/textile-paper', description: 'Dyeing reactors, band dryers' },
+              { label: 'Edible Oil, Carbon Black & Soda Ash', href: '/industries/edible-oil', description: 'Refining systems, calciners' },
+              { label: 'Water, Sewage & Desalination', href: '/industries/water-treatment', description: 'ETP/STP/RO, thermal sludge dryers' },
+              { label: 'Agriculture & Infrastructure', href: '/industries/agriculture', description: 'Irrigation systems, storage silos' },
             ],
           },
         ],
@@ -117,7 +117,17 @@ const Header = ({ className = '' }: HeaderProps) => {
     },
     {
       label: 'Projects',
-      href: '/projects',
+      megaMenu: {
+        columns: [
+          {
+            title: 'Portfolio',
+            items: [
+              { label: 'Major Projects', href: '/major-projects', description: 'Our completed projects portfolio' },
+              { label: 'Featured Projects', href: '/projects', description: 'Highlighted case studies' },
+            ],
+          },
+        ],
+      },
     },
     {
       label: 'Resources',
@@ -195,20 +205,13 @@ const Header = ({ className = '' }: HeaderProps) => {
         <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/homepage" className="flex items-center space-x-3 group">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center engineering-transition group-hover:scale-105">
-                <svg
-                  className="w-6 h-6 text-primary-foreground"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" />
-                  <path d="M8 11l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none" />
-                </svg>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-brand-headline text-xl text-primary">Hi-Nova</div>
-                <div className="font-technical text-xs text-muted-foreground -mt-1">Manufacturing Hub</div>
+            <Link href="/homepage" className="group">
+              <div className="w-auto h-10 engineering-transition group-hover:scale-105">
+                <img
+                  src="/assets/images/move.svg"
+                  alt="Hi-Nova Logo"
+                  className="h-full w-auto"
+                />
               </div>
             </Link>
           </div>

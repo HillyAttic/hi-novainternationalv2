@@ -214,7 +214,7 @@ const InteractiveTools = ({ className = '' }: InteractiveToolsProps) => {
 
         {/* Coming Soon Tools */}
         <div className="mt-16">
-          <div className="bg-gradient-to-r from-muted to-muted/50 rounded-2xl p-8 lg:p-12 text-center">
+          <div className="bg-muted rounded-2xl p-8 lg:p-12 text-center">
             <h3 className="font-brand-headline text-2xl lg:text-3xl text-foreground mb-4">
               More Tools Coming Soon
             </h3>

@@ -90,7 +90,7 @@ const TechnicalConsultation = ({ className = '' }: TechnicalConsultationProps) =
   };
 
   return (
-    <section className={`py-16 bg-gradient-to-br from-secondary/20 to-secondary/5 ${className}`}>
+    <section className={`py-16 bg-secondary ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center space-x-2 mb-4">

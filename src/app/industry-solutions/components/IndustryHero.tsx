@@ -6,7 +6,7 @@ interface IndustryHeroProps {
 
 const IndustryHero = ({ className = '' }: IndustryHeroProps) => {
   return (
-    <section className={`relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground py-20 lg:py-32 ${className}`}>
+    <section className={`relative bg-primary text-primary-foreground py-20 lg:py-32 ${className}`}>
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

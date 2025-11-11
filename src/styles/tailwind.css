@@ -8,14 +8,14 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Green, Blue, White, Silver */
-    --color-primary: #2D5016; /* Forest green */
+    /* Brand Colors - Engineering Blue, Precision Light Blue, White, Silver */
+    --color-primary: #1B365D; /* Deep engineering blue */
     --color-primary-foreground: #FFFFFF; /* white */
-    --color-secondary: #F3F4F6; /* Light silver */
-    --color-secondary-foreground: #2D5016; /* Forest green */
+    --color-secondary: #E8F4FD; /* Precision light blue */
+    --color-secondary-foreground: #1B365D; /* Deep engineering blue */
 
     /* Conversion Colors */
-    --color-accent: #1E40AF; /* Steel blue */
+    --color-accent: #FF6B35; /* Engineering orange */
     --color-accent-foreground: #FFFFFF; /* white */
     --color-success: #2E7D32; /* Success green (keeping) */
     --color-success-foreground: #FFFFFF; /* white */
@@ -41,7 +41,7 @@
     /* Interactive Elements */
     --color-border: #E5E7EB; /* Light silver border */
     --color-input: #FFFFFF; /* white */
-    --color-ring: #2D5016; /* Forest green */
+    --color-ring: #1B365D; /* Deep engineering blue */
   }
 
   * {
@@ -86,11 +86,11 @@
 
 @layer components {
   .precision-shadow {
-    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.08);
+    box-shadow: 0 2px 8px rgba(27, 54, 93, 0.08);
   }
 
   .precision-shadow-lg {
-    box-shadow: 0 4px 16px rgba(45, 80, 22, 0.12);
+    box-shadow: 0 4px 16px rgba(27, 54, 93, 0.12);
   }
   
   .engineering-transition {

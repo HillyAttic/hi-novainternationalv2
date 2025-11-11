@@ -6,7 +6,7 @@ interface ContactHeroProps {
 
 const ContactHero = ({ className = '' }: ContactHeroProps) => {
   return (
-    <section className={`bg-gradient-to-br from-primary to-primary/90 text-primary-foreground py-16 lg:py-24 ${className}`}>
+    <section className={`bg-primary text-primary-foreground py-16 lg:py-24 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>

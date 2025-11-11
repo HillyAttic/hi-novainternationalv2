@@ -132,7 +132,7 @@ const CapabilityHighlights = ({ className = '' }: CapabilityHighlightsProps) => 
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="mt-16 bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 lg:p-12 text-center">
+        <div className="mt-16 bg-primary rounded-2xl p-8 lg:p-12 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <h3 className="font-brand-headline text-2xl lg:text-3xl text-primary-foreground">
               Ready to Transform Your Manufacturing Process?

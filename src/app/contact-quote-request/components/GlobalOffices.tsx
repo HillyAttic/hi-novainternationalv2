@@ -177,7 +177,7 @@ const GlobalOffices = ({ className = '' }: GlobalOfficesProps) => {
         </div>
 
         {/* Contact Information Summary */}
-        <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 text-primary-foreground">
+        <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">

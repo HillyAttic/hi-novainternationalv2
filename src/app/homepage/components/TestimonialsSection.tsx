@@ -88,17 +88,10 @@ const TestimonialsSection = ({ className = '' }: TestimonialsSectionProps) => {
                 </blockquote>
 
                 {/* Author Info */}
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center">
-                    <span className="font-cta text-primary-foreground text-lg font-bold">
-                      {testimonial.author.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <div>
-                    <div className="font-cta text-foreground">{testimonial.author}</div>
-                    <div className="font-body text-sm text-muted-foreground">
-                      {testimonial.position}, {testimonial.company}
-                    </div>
+                <div>
+                  <div className="font-cta text-foreground">{testimonial.author}</div>
+                  <div className="font-body text-sm text-muted-foreground">
+                    {testimonial.position}, {testimonial.company}
                   </div>
                 </div>
               </div>

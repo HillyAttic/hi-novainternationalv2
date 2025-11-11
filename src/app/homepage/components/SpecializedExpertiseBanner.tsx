@@ -7,19 +7,24 @@ interface SpecializedExpertiseBannerProps {
 
 const SpecializedExpertiseBanner = ({ className = '' }: SpecializedExpertiseBannerProps) => {
   const dryerTypes = [
-    'Rotary Dryers',
     'Paddle Dryers',
+    'Rotary Dryers',
     'Band Dryers',
-    'Spray Dryers',
+    'Fluidized Bed Dryers',
     'Spin Flash Dryers',
-    'Fluid Bed Dryers',
-    'Calciners',
+    'Spray Dryers',
+    'Vacuum Dryers',
+    'Roto Cone Vacuum Dryers',
+    'Calciners & Kilns',
     'Calandrias',
-    'Static Ovens'
+    'Static Ovens',
+    'Decanters & Centrifuges',
+    'Hot Air Fluidized Dryers',
+    'Thermal Sludge Dryers'
   ];
 
   return (
-    <section className={`py-16 lg:py-20 bg-gradient-to-r from-primary/5 via-secondary/10 to-primary/5 ${className}`}>
+    <section className={`py-16 lg:py-20 bg-secondary ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -43,7 +48,7 @@ const SpecializedExpertiseBanner = ({ className = '' }: SpecializedExpertiseBann
             {/* Dryer Types */}
             <div className="space-y-4">
               <h3 className="font-cta text-xl text-foreground">Core Dryer Technologies:</h3>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {dryerTypes.map((dryer, index) => (
                   <div key={index} className="flex items-center space-x-2">
                     <Icon name="CheckIcon" size={16} className="text-primary flex-shrink-0" />
@@ -76,7 +81,7 @@ const SpecializedExpertiseBanner = ({ className = '' }: SpecializedExpertiseBann
                 alt="Industrial rotary dryer system in manufacturing facility with stainless steel construction and control panels"
                 className="w-full h-96 lg:h-[400px] object-cover" />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-primary/60"></div>
 
               {/* Floating Badge */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-4 precision-shadow">

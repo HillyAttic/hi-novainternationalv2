@@ -7,7 +7,7 @@ interface ServiceHeroProps {
 
 const ServiceHero = ({ className = '' }: ServiceHeroProps) => {
   return (
-    <section className={`relative bg-gradient-to-br from-primary to-primary/90 text-primary-foreground overflow-hidden ${className}`}>
+    <section className={`relative bg-primary text-primary-foreground overflow-hidden ${className}`}>
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

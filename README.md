@@ -1,6 +1,14 @@
-# Next.js App
+# Hi-Nova International - Manufacturing Hub
 
-This is a Next.js application with TypeScript and Tailwind CSS.
+A comprehensive Next.js application showcasing Hi-Nova International's manufacturing capabilities, major projects portfolio, and engineering excellence.
+
+## Features
+
+- **Major Projects Portfolio**: Comprehensive showcase of 40+ successfully delivered projects across 24+ clients
+- **Industry Solutions**: Specialized solutions for Food & Dairy, Pharma, Petrochemical, and more
+- **Product Catalog**: Complete range of industrial equipment and systems
+- **Engineering Services**: EPC, turnkey projects, and technical consulting
+- **Resource Center**: Case studies, technical documentation, and knowledge base
 
 ## Getting Started
 
@@ -16,23 +24,40 @@ Then, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4028](http://localhost:4028) with your browser to see the result.
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+## Key Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `/homepage` - Main landing page
+- `/major-projects` - Complete portfolio of major projects
+- `/industry-solutions` - Industry-specific solutions
+- `/engineering-services` - Service offerings
+- `/contact-quote-request` - Contact and quote request form
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 14 with TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **3D Graphics**: Three.js with React Three Fiber
+- **Icons**: Heroicons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── homepage/
+│   ├── major-projects/      # New: Major projects portfolio
+│   ├── industry-solutions/
+│   ├── engineering-services/
+│   └── contact-quote-request/
+├── components/
+│   ├── common/
+│   └── ui/
+└── styles/
+```
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_medium=creator) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The easiest way to deploy is using [Vercel Platform](https://vercel.com/new).

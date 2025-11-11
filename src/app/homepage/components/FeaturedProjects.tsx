@@ -145,14 +145,24 @@ const FeaturedProjects = ({ className = '' }: FeaturedProjectsProps) => {
         </div>
 
         {/* View All Projects CTA */}
-        <div className="text-center mt-12">
-          <Link
-            href="/resource-center"
-            className="inline-flex items-center space-x-2 bg-accent text-accent-foreground font-cta px-8 py-3 rounded-lg hover:bg-accent/90 engineering-transition precision-shadow">
-
-            <span>View All Projects</span>
-            <Icon name="ArrowRightIcon" size={20} />
-          </Link>
+        <div className="text-center mt-12 space-y-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/major-projects"
+              className="inline-flex items-center space-x-2 bg-primary text-primary-foreground font-cta px-8 py-3 rounded-lg hover:bg-primary/90 engineering-transition precision-shadow">
+              <span>View Major Projects Portfolio</span>
+              <Icon name="ArrowRightIcon" size={20} />
+            </Link>
+            <Link
+              href="/resource-center"
+              className="inline-flex items-center space-x-2 bg-accent text-accent-foreground font-cta px-8 py-3 rounded-lg hover:bg-accent/90 engineering-transition precision-shadow">
+              <span>View Case Studies</span>
+              <Icon name="ArrowRightIcon" size={20} />
+            </Link>
+          </div>
+          <p className="font-technical text-sm text-muted-foreground">
+            Explore our complete portfolio of 40+ successfully delivered projects across 24+ clients
+          </p>
         </div>
       </div>
     </section>);

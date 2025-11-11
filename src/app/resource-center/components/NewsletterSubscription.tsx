@@ -59,7 +59,7 @@ const NewsletterSubscription = ({ className = '' }: NewsletterSubscriptionProps)
   }
 
   return (
-    <section className={`bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-16 ${className}`}>
+    <section className={`bg-primary text-primary-foreground py-16 ${className}`}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
