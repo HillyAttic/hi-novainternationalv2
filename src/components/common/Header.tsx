@@ -307,7 +307,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               <span>Get Quote</span>
             </Link>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919371101366"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 engineering-transition precision-shadow hover:precision-shadow-lg"
@@ -320,7 +320,7 @@ const Header = ({ className = '' }: HeaderProps) => {
           {/* Mobile menu button */}
           <div className="xl:hidden flex items-center space-x-2">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919371101366"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 engineering-transition"

@@ -24,54 +24,28 @@ const GlobalOffices = ({ className = '' }: GlobalOfficesProps) => {
     {
       id: 'india-hq',
       country: 'India',
-      city: 'Gurgaon (Headquarters)',
+      city: 'Ambernath (Headquarters)',
       type: 'Manufacturing & Engineering Hub',
-      address: 'Hi-Nova Manufacturing Hub, Sector 15, Industrial Area, Gurgaon, Haryana 122001',
-      phone: '+91-124-4567890',
-      email: 'india@hinova-manufacturing.com',
+      address: 'Plot No. B-29, Anand Nagar Additional MIDC, Ambernath East, Dist. Thane, Maharashtra 421 301',
+      phone: '+91 98339 65129',
+      email: 'rohidas@hi-novainternational.com',
       timezone: 'IST (UTC+5:30)',
       languages: ['English', 'Hindi'],
       services: ['Manufacturing', 'Engineering', 'R&D', 'Technical Support'],
-      coordinates: { lat: 28.4595, lng: 77.0266 }
+      coordinates: { lat: 19.1883, lng: 73.1964 }
     },
     {
-      id: 'uae-office',
-      country: 'UAE',
-      city: 'Dubai',
-      type: 'Middle East Operations',
-      address: 'Dubai Industrial City, Al Qusais Industrial Area, Dubai, UAE',
-      phone: '+971-4-1234567',
-      email: 'dubai@hinova-manufacturing.com',
-      timezone: 'GST (UTC+4)',
-      languages: ['English', 'Arabic'],
-      services: ['Sales', 'Project Management', 'After-sales Support'],
-      coordinates: { lat: 25.2048, lng: 55.2708 }
-    },
-    {
-      id: 'singapore-office',
-      country: 'Singapore',
-      city: 'Singapore',
-      type: 'Asia-Pacific Hub',
-      address: 'Jurong Industrial Estate, 21 Tuas Avenue 8, Singapore 639192',
-      phone: '+65-6789-0123',
-      email: 'singapore@hinova-manufacturing.com',
-      timezone: 'SGT (UTC+8)',
-      languages: ['English', 'Mandarin', 'Malay'],
-      services: ['Regional Sales', 'Technical Consulting', 'Logistics'],
-      coordinates: { lat: 1.3521, lng: 103.8198 }
-    },
-    {
-      id: 'germany-office',
-      country: 'Germany',
-      city: 'Munich',
-      type: 'European Operations',
-      address: 'Industriestraße 15, 80339 München, Germany',
-      phone: '+49-89-1234567',
-      email: 'munich@hinova-manufacturing.com',
-      timezone: 'CET (UTC+1)',
-      languages: ['English', 'German'],
-      services: ['European Sales', 'Compliance', 'Technical Support'],
-      coordinates: { lat: 48.1351, lng: 11.5820 }
+      id: 'india-office-2',
+      country: 'India',
+      city: 'Ambernath (Corporate Office)',
+      type: 'Corporate Office',
+      address: 'Plot No. B-64, Anand Nagar Additional MIDC, Ambernath East, Dist. Thane, Maharashtra 421 301',
+      phone: '+91 98203 39871',
+      email: 'hinovainternational@rediffmail.com',
+      timezone: 'IST (UTC+5:30)',
+      languages: ['English', 'Hindi'],
+      services: ['Sales', 'Project Management', 'Customer Support'],
+      coordinates: { lat: 19.1883, lng: 73.1964 }
     }
   ];
 

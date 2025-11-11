@@ -26,7 +26,7 @@ const QuickContactOptions = ({ className = '' }: QuickContactOptionsProps) => {
       title: 'Call Our Experts',
       description: 'Speak directly with our engineering team for immediate technical assistance',
       icon: 'PhoneIcon',
-      action: '+91-9876543210',
+      action: '+91 98339 65129',
       availability: 'Mon-Sat, 9 AM - 6 PM IST',
       color: 'bg-success'
     },
@@ -35,7 +35,7 @@ const QuickContactOptions = ({ className = '' }: QuickContactOptionsProps) => {
       title: 'WhatsApp Support',
       description: 'Quick technical queries and instant responses from our support team',
       icon: 'ChatBubbleLeftEllipsisIcon',
-      action: '+91-9876543210',
+      action: '+91 98203 39871',
       availability: '24/7 Available',
       color: 'bg-accent'
     },
@@ -44,7 +44,7 @@ const QuickContactOptions = ({ className = '' }: QuickContactOptionsProps) => {
       title: 'Email Inquiry',
       description: 'Detailed technical discussions and comprehensive project documentation',
       icon: 'EnvelopeIcon',
-      action: 'info@hinova-manufacturing.com',
+      action: 'rohidas@hi-novainternational.com',
       availability: 'Response within 24 hours',
       color: 'bg-primary'
     },
@@ -117,15 +117,27 @@ const QuickContactOptions = ({ className = '' }: QuickContactOptionsProps) => {
         </div>
 
         <div className="mt-12 text-center">
-          <div className="bg-white rounded-xl p-6 precision-shadow max-w-md mx-auto">
+          <div className="bg-white rounded-xl p-6 precision-shadow max-w-2xl mx-auto">
             <Icon name="MapPinIcon" size={24} className="text-primary mx-auto mb-3" />
-            <h3 className="font-cta text-lg text-foreground mb-2">Visit Our Facility</h3>
-            <p className="font-body text-sm text-muted-foreground mb-3">
-              Hi-Nova Manufacturing Hub\nSector 15, Industrial Area\nGurgaon, Haryana 122001, India
-            </p>
-            <button className="font-cta text-primary hover:text-primary/80 engineering-transition">
-              Get Directions
-            </button>
+            <h3 className="font-cta text-lg text-foreground mb-2">Visit Our Facilities</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div>
+                <p className="font-body text-sm font-semibold text-foreground mb-2">Manufacturing Facility</p>
+                <p className="font-body text-sm text-muted-foreground">
+                  Plot No. B-29, Anand Nagar Additional MIDC<br />
+                  Ambernath East, Dist. Thane<br />
+                  Maharashtra 421 301, India
+                </p>
+              </div>
+              <div>
+                <p className="font-body text-sm font-semibold text-foreground mb-2">Corporate Office</p>
+                <p className="font-body text-sm text-muted-foreground">
+                  Plot No. B-64, Anand Nagar Additional MIDC<br />
+                  Ambernath East, Dist. Thane<br />
+                  Maharashtra 421 301, India
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

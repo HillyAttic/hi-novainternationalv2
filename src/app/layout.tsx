@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/index.css';
+import WhatsAppChat from '@/components/common/WhatsAppChat';
 
 export const viewport = {
   width: 'device-width',
@@ -24,6 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}
+
+        {/* Global WhatsApp Chat */}
+        <WhatsAppChat
+          phoneNumber="919371101366"
+          defaultMessage="Hi! I'd like to know more about your company and services."
+          position="bottom-left"
+          showTooltip={true}
+        />
 
         <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhinovama1021back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9" />
         <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1" /></body>
