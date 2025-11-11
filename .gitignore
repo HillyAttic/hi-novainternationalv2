@@ -34,3 +34,6 @@ jest-test-results.json
 
 # Vercel deployment
 .vercel/
+package-lock.json
+.gitignore
+package.json

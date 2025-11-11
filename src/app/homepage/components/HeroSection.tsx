@@ -1,12 +1,17 @@
+'use client';
+
+import { useRef } from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
+import Beams from '@/components/ui/Beams';
 
 interface HeroSectionProps {
   className?: string;
 }
 
 const HeroSection = ({ className = '' }: HeroSectionProps) => {
+  const heroRef = useRef<HTMLDivElement>(null);
   const heroStats = [
   { value: '30+', label: 'Years Experience' },
   { value: '500+', label: 'Projects Delivered' },
@@ -15,10 +20,19 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
 
 
   return (
-    <section className={`relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground overflow-hidden ${className}`}>
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-y-12"></div>
+    <section ref={heroRef} className={`relative text-primary-foreground overflow-hidden ${className}`}>
+      {/* Animated Beams Background */}
+      <div className="absolute inset-0">
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={0}
+        />
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -31,10 +45,10 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
                 <span className="font-technical text-sm">ISO 9001:2015 Certified</span>
               </div>
               
-              <h1 className="font-brand-headline text-4xl lg:text-6xl leading-tight">
-                Custom Process Equipment &
-                <span className="block text-accent">Industrial Drying Solutions</span>
-              </h1>
+              <div className="font-brand-headline text-4xl lg:text-6xl leading-tight">
+                <h1 className="block">Custom Process Equipment &</h1>
+                <h1 className="block text-accent">Industrial Drying Solutions</h1>
+              </div>
 
               <p className="font-value-proposition text-xl lg:text-2xl text-primary-foreground/90 leading-relaxed">
                 Engineering reliable, energy-efficient systems for Food, Pharma, Chemical & Petrochemical industries worldwide.

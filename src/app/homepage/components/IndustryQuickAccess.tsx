@@ -143,22 +143,30 @@ const IndustryQuickAccess = ({ className = '' }: IndustryQuickAccessProps) => {
         </div>
 
         {/* Other Industries Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-6">
           {otherIndustries.map((industry) => (
             <Link
               key={industry.id}
               href={industry.href}
-              className="group flex items-center space-x-3 bg-card rounded-lg p-4 precision-shadow hover:precision-shadow-lg engineering-transition border border-border hover:border-primary/20"
+              className="group bg-card rounded-xl p-6 precision-shadow hover:precision-shadow-lg engineering-transition border border-border hover:border-primary/20"
             >
-              <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 engineering-transition">
-                <Icon name={industry.icon as any} size={20} className="text-primary" />
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 engineering-transition">
+                    <Icon name={industry.icon as any} size={24} className="text-primary" />
+                  </div>
+                  <Icon name="ArrowRightIcon" size={20} className="text-muted-foreground group-hover:text-primary engineering-transition" />
+                </div>
+
+                <div>
+                  <h3 className="font-cta text-lg text-foreground group-hover:text-primary engineering-transition">
+                    {industry.name}
+                  </h3>
+                  <p className="font-body text-muted-foreground mt-2">
+                    {industry.description}
+                  </p>
+                </div>
               </div>
-              <div className="flex-1">
-                <h4 className="font-cta text-foreground group-hover:text-primary engineering-transition">
-                  {industry.name}
-                </h4>
-              </div>
-              <Icon name="ArrowRightIcon" size={16} className="text-muted-foreground group-hover:text-primary engineering-transition" />
             </Link>
           ))}
         </div>
